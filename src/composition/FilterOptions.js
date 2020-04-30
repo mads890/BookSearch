@@ -5,13 +5,13 @@ class FilterOptions extends Component {
         return (
             <div className="filter_options_box">
                 <label htmlFor="print">Print Type:</label>
-                <select id="print" onChange={e => this.props.filterPrint(e.target.val)}>
+                <select id="print" onChange={e => this.props.filterPrint(e.target.value)}>
                     <option value="all">All</option>
                     <option value="books">Books</option>
                     <option value="magazines">Magazines</option>
                 </select>
                 <label htmlFor="book">Book Type:</label>
-                <select id="book" onChange={e => this.props.filterBook(e.target.val)}>
+                <select id="book" onChange={e => this.props.filterBook(e.target.value)}>
                     <option value="ebooks">All</option>
                     <option value="free-ebooks">Free</option>
                     <option value="paid-ebooks">Paid</option>

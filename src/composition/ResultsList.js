@@ -3,7 +3,11 @@ import ResultsItem from './ResultsItem';
 
 class ResultsList extends Component {
     render() {
-        const resultsItems = this.props.results.map()
+        const resultsItems = this.props.books.map((item) => {
+            return (
+            <ResultsItem item={item} id={item.id} key={item.id} />
+            )
+        })
         return (
             <ul>
                 {resultsItems}
