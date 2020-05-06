@@ -11,8 +11,8 @@ class ResultsItem extends Component {
         const description = this.props.item.volumeInfo.description
         const coverArt = this.props.item.volumeInfo.imageLinks.thumbnail;
         return (
-            <li key={this.props.id}>
-                <header>{title}</header>
+            <li className="results_item_box" key={this.props.id}>
+                <header className="results_item_heading">{title}</header>
                 <ItemBody author={author} price={price} description={description} coverArt={coverArt} />
             </li>
         );
